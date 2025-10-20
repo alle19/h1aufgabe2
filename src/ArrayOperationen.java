@@ -20,5 +20,22 @@ public class ArrayOperationen {
         return min;
     }
 
+    public  static int findMaxSum(int[] numbers){
+        int sum = 0;
+        int min =findMin(numbers);
+        for (int num : numbers) {
+            sum += num;
+        }
+        return sum - min;
+    }
+
+    public static int findMinSum(int[] numbers){
+        int sum = 0;
+        int max = findMax(numbers);
+        for (int num : numbers) {
+            sum += num;
+        }
+        return sum - max;
+    }
 
 }
